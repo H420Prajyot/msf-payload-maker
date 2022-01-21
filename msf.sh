@@ -3,7 +3,8 @@
 echo "1 = msf payload for android"
 echo "2 = msf payload for windows"
 echo "3 = start msf-listener"
-echo "4 = exit"
+echo "4 = update script"
+echo "5 = exit"
 
 
 fu1() {
@@ -47,6 +48,7 @@ msfconsole -r $name.rc
 }
 
 fu4() {
+rm -rf msf.sh
 sudo git clone https://github.com/H420Prajyot/msf-payload-maker/blob/main/msf.sh
 }
 

@@ -46,11 +46,14 @@ read -p "Enter a Name of payload without extension : " name
 msfconsole -r $name.rc
 }
 
+fu4() {
+sudo git clone https://github.com/H420Prajyot/msf-payload-maker/blob/main/msf.sh
+}
 
-fu4() { exit; }
+fu5() { exit; }
 
 read -p "Enter a Number : " num
 
-if [[ $num = [1234] ]]; then # validate input
+if [[ $num = [12345] ]]; then # validate input
   fu"$num"
 fi

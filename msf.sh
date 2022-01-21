@@ -49,7 +49,8 @@ msfconsole -r $name.rc
 
 fu4() {
 rm -rf msf.sh
-sudo git clone https://github.com/H420Prajyot/msf-payload-maker/msf.sh
+sudo wget https://github.com/H420Prajyot/msf-payload-maker/blob/main/msf.sh
+echo "Script is updated"
 }
 
 fu5() { exit; }

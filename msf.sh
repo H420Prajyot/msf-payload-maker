@@ -3,8 +3,7 @@
 echo "1 = msf payload for android"
 echo "2 = msf payload for windows"
 echo "3 = start msf-listener"
-echo "4 = update script"
-echo "5 = exit"
+echo "4 = exit"
 
 
 fu1() {
@@ -47,17 +46,11 @@ read -p "Enter a Name of payload without extension : " name
 msfconsole -r $name.rc
 }
 
-fu4() {
-rm -rf msf.sh
-sudo wget https://github.com/H420Prajyot/msf-payload-maker/blob/main/msf.sh
-chmod +x msf.sh
-echo "Script is updated"
-}
 
-fu5() { exit; }
+fu4() { exit; }
 
 read -p "Enter a Number : " num
 
-if [[ $num = [12345] ]]; then # validate input
+if [[ $num = [1234] ]]; then # validate input
   fu"$num"
 fi

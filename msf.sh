@@ -49,7 +49,7 @@ msfconsole -r $name.rc
 
 fu4() {
 rm -rf msf.sh
-sudo git clone https://github.com/H420Prajyot/msf-payload-maker/blob/main/msf.sh
+sudo git clone https://github.com/H420Prajyot/msf-payload-maker/msf.sh
 }
 
 fu5() { exit; }

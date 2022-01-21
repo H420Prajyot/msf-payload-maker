@@ -50,6 +50,7 @@ msfconsole -r $name.rc
 fu4() {
 rm -rf msf.sh
 sudo wget https://github.com/H420Prajyot/msf-payload-maker/blob/main/msf.sh
+chmod +x msf.sh
 echo "Script is updated"
 }
 
